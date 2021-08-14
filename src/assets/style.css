@@ -1,0 +1,19 @@
+.image{
+  width: 50%;
+}
+
+.card{
+  width: 33vw;
+  float: left;
+}
+ul{
+  list-style: none;
+}
+body{
+  background-color: bisque;
+}
+.title{
+  text-align: center;
+  font-size: 64px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
