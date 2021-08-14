@@ -32,7 +32,7 @@ render(){
               <CardText>{member.votes} vote(s) so far!</CardText>
               : null}
 
-                <button onClick={() => this.handleVote(member)}>ADD</button>
+                <button onClick={() => this.handleVote(member)}>VOTE</button>
 
             </CardBody>
           </Card>

@@ -3,7 +3,7 @@ import {
   Card, CardImg, CardTitle, CardText,
   CardSubtitle, CardBody
 } from 'reactstrap';
-import Vote from './Vote'
+// import Vote from './Vote'
 import Owl from './Owl.jpg'
 
 const Member = props =>{
@@ -21,7 +21,7 @@ return(
           <CardTitle tag="h5">{member.name}</CardTitle>
           <CardSubtitle tag="h6" className="mb-2 text-muted">{member.title}</CardSubtitle>
           <CardText>{member.bio}</CardText>
-          <Vote memberID={member.id}/>
+          {/* <Vote memberID={member.id}/> */}
         </CardBody> 
       </Card> : null}
     </>
