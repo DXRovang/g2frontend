@@ -1,11 +1,13 @@
-import './App.css';
+import React from 'react';
+import MembersContainer from './containers/MembersContainer'
+class App extends React.Component {
 
-function App() {
-  return (
-    <div className="App">
+  render(){
+    return (
+        <MembersContainer />
+    );
+  }
 
-    </div>
-  );
 }
 
-export default App;
+export default App
