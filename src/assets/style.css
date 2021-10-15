@@ -1,11 +1,20 @@
 .image{
   width: 50%;
+  /* float: left; */
+}
+.icon{
+  height: 50px;
+}
+
+.group{
+  align-items: center;
 }
 
 .card{
-  width: 33vw;
-  float: left;
+  width: 50vw;
+  
 }
+
 ul{
   list-style: none;
 }

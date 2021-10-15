@@ -5,7 +5,8 @@ import {
 } from 'reactstrap';
 import { connect } from 'react-redux'
 import { addVote } from '../actions/addVote'
-import Owl from './Owl.jpg'
+import thumb from '../assets/thumb.svg'
+
 
 class Roster extends React.Component{
 
@@ -22,23 +23,20 @@ render(){
        {fullList ? fullList.map(member =>
         <li>
           <Card className="card">
-          {member.image_url ? 
-        <CardImg top width="100%" className="image" src={member.image_url}  alt="Card image cap" /> :
-        <CardImg top width="100%" className="image" src={Owl} alt="Card image cap" />}            <CardBody>
+            {member.image_url ? 
+            <CardImg top width="100%" float="left"className="image" src={member.image_url}  alt="Card image cap" /> : null}            
+            <CardBody>
               <CardTitle tag="h5">{member.name}</CardTitle>
               <CardSubtitle tag="h6" className="mb-2 text-muted">{member.title}</CardSubtitle>
               <CardText>{member.bio}</CardText>
               {member.votes ? 
-              <CardText>{member.votes} vote(s) so far!</CardText>
-              : null}
-
-                <button onClick={() => this.handleVote(member)}>VOTE</button>
-
+              <CardText>{member.votes} vote(s) so far!</CardText>: null}
+              <button  onClick={() => this.handleVote(member)}><CardImg className="icon"src={thumb}/></button>
             </CardBody>
           </Card>
           </li>): null}
       </ul>
-      </CardGroup>
+    </CardGroup>
 
   )
 }
