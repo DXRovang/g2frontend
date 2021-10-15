@@ -3,11 +3,19 @@
   /* float: left; */
 }
 .icon{
-  height: 50px;
+  height: 20px;
 }
-
+.left{
+  float: left;
+}
+.new{
+  clear: left;
+}
 .group{
   align-items: center;
+}
+.title{
+  align-content: center;
 }
 
 .card{
