@@ -19,14 +19,14 @@ render(){
   const fullList = this.props.members
   return(
     <>
-    <Title ClassName="title"/>
+    <Title />
     <CardGroup className="group">
        <ul>
        {fullList ? fullList.map(member =>
         <li>
           <Card className="card">
             {member.image_url ? 
-            <CardImg top width="100%" float="left"className="image" src={member.image_url}  alt="Card image cap" /> : null}            
+            <CardImg top width="100%"className="image" src={member.image_url}  alt="Card image cap" /> : null}            
             <CardBody>
               <CardTitle tag="h5">{member.name}</CardTitle>
               <CardSubtitle tag="h6" className="mb-2 text-muted">{member.title}</CardSubtitle>

@@ -4,7 +4,7 @@ const Title = props =>{
 
     
     return(
-      <div>G2 Crowd Team Roster!</div>
+      <h1 className="title">G2 Crowd Team Roster!</h1>
     )
   }
 
