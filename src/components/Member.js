@@ -13,7 +13,7 @@ let member = props.members[props.match.params.id - 1]
  
 return(
     <>
-    {member ? 
+    {/* {member ? 
       <Card className="card">
         {member.image_url ? 
         <CardImg top width="100%" className="image" src={member.image_url}  alt="Card image cap" /> : null}
@@ -22,7 +22,7 @@ return(
           <CardSubtitle tag="h6" className="mb-2 text-muted">{member.title}</CardSubtitle>
           <CardText>{member.bio}</CardText>
         </CardBody> 
-      </Card> : null}
+      </Card> : null} */}
 
     </>
   )

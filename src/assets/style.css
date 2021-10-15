@@ -1,5 +1,5 @@
 .image{
-  width: 50%;
+  width: 100%;
   /* float: left; */
 }
 .icon{
@@ -12,14 +12,18 @@
   clear: left;
 }
 .group{
-  width: 50vw;
+  width: 80vw;
   margin: auto;
 }
 
-/* .card{
-  width: 50vw;
-  margin: auto;
-} */
+
+
+.bold{
+  font-weight: bold;
+}
+.blue{
+  color: rgb(67, 155, 161);
+}
 
 ul{
   list-style: none;
