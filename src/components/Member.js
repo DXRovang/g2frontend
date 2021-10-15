@@ -1,14 +1,14 @@
 import React from 'react'
-import {
-  Card, 
-  CardImg, 
-  CardTitle, CardText,
-  CardSubtitle, CardBody
-} from 'reactstrap';
+// import {
+//   Card, 
+//   CardImg, 
+//   CardTitle, CardText,
+//   CardSubtitle, CardBody
+// } from 'reactstrap';
 
 
 const Member = props =>{
-let member = props.members[props.match.params.id - 1]
+// let member = props.members[props.match.params.id - 1]
 
  
 return(

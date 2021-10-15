@@ -4,7 +4,6 @@ import {Route, Switch} from 'react-router-dom'
 import { connect } from 'react-redux'
 import { fetchMembers } from '../actions/fetchMembers'
 import Roster from '../components/Roster'
-import Member from '../components/Member'
 
 class MembersContainer extends React.Component{
 
@@ -15,13 +14,9 @@ componentDidMount(){
     render(){
       return(
         <>
-        <Switch>
-          <Route exact path='/roster' render={(routerProps) =>
-          <Roster {...routerProps} members={this.props.members}/> }/>
-
-          <Route path='/members/:id' render={(routerProps) => 
-                <Member {...routerProps} members={this.props.members} />}/>
-                
+          <Switch>
+            <Route exact path='/roster' render={(routerProps) =>
+            <Roster {...routerProps} members={this.props.members}/> }/>         
           </Switch>
         </>
       )
