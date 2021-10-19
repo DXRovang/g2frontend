@@ -1,8 +1,11 @@
 Welcome to the G2 coding challenge!
 
-To run this app, first open "g2backend" by running 'rails s'.
+To run this app, first open "g2backend".
 
-Next, open "g2frontend" with 'yarn start'.  
+Next, open "g2frontend" with ... 
+
+1. bundle install
+2. yarn start
 
 It will prompt you to run the app on a different server, as the localhost is being utilized by the backend.   Simply respond 'yes' and navigate to /roster.
 
